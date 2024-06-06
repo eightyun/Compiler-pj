@@ -1,0 +1,22 @@
+int array()
+{
+    int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    int a1 = 0, a2 = 3, a3 = 5, a4 = 7, a5 = 9, a6 = 1, a7 = 2, a8 = 4,
+        a9 = 6;
+
+    return arr[a1] + arr[a2] + arr[a3] + arr[a4] + arr[a7] + arr[a8];
+}
+
+int main()
+{
+    int q = 1, r = 2, s = 04, t = 0x7, u = 0xA, v = 0xb, w = 0xcD, x = 077;
+
+    int sum1 = q + r + s + t + u + v + w + x;
+
+    int sum2 = array();
+
+    int sum3 = sum1 + sum2;
+
+    return 0;
+}
