@@ -5,18 +5,16 @@ public class MyErrorListener extends BaseErrorListener {
     private StringBuilder errorMessages = new StringBuilder();
 
     @Override
-    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol,
-                            int line, int charPositionInLine, String msg,
-                            RecognitionException e) {
+    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
         hasErrors = true;
-        errorMessages.append("Error type A at Line ").append(line).append(":").append(msg).append("\n");
+        errorMessages.append("Error type B at Line ").append(line).append(":").append(msg).append("\n");
     }
 
     public boolean hasErrors() {
         return hasErrors;
     }
 
-    public void printLexerErrorInformation() {
+    public void printErrorInformation() {
         System.err.print(errorMessages.toString());
     }
 }
