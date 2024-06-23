@@ -115,7 +115,7 @@ unaryOp
 funcRParams
     : param (COMMA param)*
     ;
-    
+
 param
     : exp
     ;
